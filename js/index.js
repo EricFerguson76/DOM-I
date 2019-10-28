@@ -83,6 +83,23 @@ topText1.textContent = siteContent['main-content']['about-content'];
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
+//BOTTOM CONTENT
+let bottomContent1 = document.querySelectorAll('.bottom-content h4')[0];
+bottomContent1.textContent = siteContent['main-content']['services-h4'];
+
+let bottomText = document.querySelectorAll('.bottom-content p')[0];
+bottomText.textContent = siteContent['main-content']['services-content'];
+
+let bottomContent2 = document.querySelectorAll('.bottom-content h4')[1];
+bottomContent2.textContent = siteContent['main-content']['product-h4'];
+
+let bottomText1 = document.querySelectorAll('.bottom-content p')[1];
+bottomText1.textContent = siteContent['main-content']['product-content'];
+
+//CONTACT INFO
+let Contact1 = document.querySelector('.contact h4');
+Contact1.textContent = siteContent['contact']['contact-h4'];
+
 //FOOTER INFO
 const footer1 = document.querySelector('footer p');
 footer1.textContent = siteContent['footer']['copyright'];
