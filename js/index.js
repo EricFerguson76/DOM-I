@@ -55,6 +55,22 @@ navItem[3].textContent = siteContent['nav']['nav-item-4'];
 navItem[4].textContent = siteContent['nav']['nav-item-5'];
 navItem[5].textContent = siteContent['nav']['nav-item-6'];
 
+//ADDED NEW CONTENT
+let newNavItem = document.createElement('a');
+newNavItem.textContent = 'Items';
+let newNav = document.querySelector('nav');
+newNav.append(newNavItem);
+
+let newNavItem1 = document.createElement('a');
+newNavItem1.textContent = 'Forms';
+let newNav1 = document.querySelector('nav');
+newNav1.prepend(newNavItem1);
+
+let navItem1 = document.querySelectorAll('nav a');
+navItem1.forEach(element => {
+  element.style.color = 'green';
+});
+
 //CTA
 
 let ctaImg = document.getElementById('cta-img');
@@ -99,6 +115,15 @@ bottomText1.textContent = siteContent['main-content']['product-content'];
 //CONTACT INFO
 let Contact1 = document.querySelector('.contact h4');
 Contact1.textContent = siteContent['contact']['contact-h4'];
+
+let contactText = document.querySelectorAll('.contact p')[0];
+contactText.innerHTML = '123 Way 456 Street<br/> Somewhere, USA';
+
+let contactText1 = document.querySelectorAll('.contact p')[1];
+contactText1.textContent = siteContent['contact']['phone'];
+
+let contactText2 = document.querySelectorAll('.contact p')[2];
+contactText2.textContent = siteContent['contact']['email'];
 
 //FOOTER INFO
 const footer1 = document.querySelector('footer p');
