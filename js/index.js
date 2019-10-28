@@ -64,9 +64,20 @@ let buttonOne = document.querySelector('button');
 buttonOne.textContent = siteContent['cta']['button'];
 
 let ctaOne = document.querySelector('.cta-text h1');
-ctaOne.textContent = siteContent['cta']['h1'];
+ctaOne.innerHTML = 'DOM<br/>is<br/>awesome';
 
 //TOP CONTENT
+let topContent1 = document.querySelectorAll('.top-content h4')[0];
+topContent1.textContent = siteContent['main-content']['features-h4'];
+
+let topText = document.querySelectorAll('.top-content p')[0];
+topText.textContent = siteContent['main-content']['features-content'];
+
+let topContent2 = document.querySelectorAll('.top-content h4')[1];
+topContent2.textContent = siteContent['main-content']['about-h4'];
+
+let topText1 = document.querySelectorAll('.top-content p')[1];
+topText1.textContent = siteContent['main-content']['about-content'];
 
 //MIDDLE IMAGE
 let middleImg = document.getElementById('middle-img');
